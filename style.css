@@ -1,0 +1,17 @@
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid black;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    
+}
+ .sidebar ul li a:hover {
+   
+    padding: 10px;
+    background-color: gray;
+    color: black;
+}
