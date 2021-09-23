@@ -34,13 +34,15 @@ align-items: center;
 
 }
 
-ul {
+ul, a {
     list-style-type: none;
     margin: 0;
     padding: 0;
     float: left;
     display: grid;
     column-gap: 17%;
+    text-decoration: none;
+    color: black;
   }
 
 a:hover {
