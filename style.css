@@ -1,0 +1,78 @@
+body {
+    background-size: 100%;
+    background-color: #ECDDD0;
+}
+
+.head-container {
+    display: grid;
+    background-color: #ffffff;
+
+}
+
+.pic {
+    height: 150px;
+    width: auto;
+}
+
+header {
+height: 80px;
+width: auto;
+background-color: #92B1B6;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+justify-items: center;
+align-items: center;
+}
+
+.home, .records, .about-us, .contact {
+    width: 80px;
+    height: 30px;
+    background-color: #F1C5AE;
+    font-family: Eczar;
+    font-size: large;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: grid;
+    column-gap: 17%;
+  }
+
+a:hover {
+    background-color: #ECDDD0;
+}
+
+.logo {
+    grid-column: 3;
+	
+}
+
+.home {
+    
+    grid-column: 5;
+	
+}
+
+.records {
+    grid-column: 6;
+}
+
+.about-us {
+    grid-column: 7;
+}
+
+.contact {
+    grid-column: 8;
+}
+
+.search {
+    
+     grid-column: 11;
+        
+   
+}
