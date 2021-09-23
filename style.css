@@ -12,9 +12,10 @@ body {
 .pic {
     height: 250px;
     width: 100%;
-    background-image: url(img/pexels-photo-167092.jpeg);
-    background-repeat: no-repeat;
+    /*background-image: url(img/pexels-photo-167092.jpeg);*/
+    /*background-repeat: no-repeat;
     position: center;
+    background-size: auto;*/
 }
 
 header {
