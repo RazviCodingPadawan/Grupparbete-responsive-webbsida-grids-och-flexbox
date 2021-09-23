@@ -31,6 +31,20 @@ align-items: center;
     font-family: Eczar;
     font-size: large;
     text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: grid;
+    column-gap: 17%;
+  }
+
+a:hover {
+    background-color: #ECDDD0;
 }
 
 .logo {
@@ -39,8 +53,21 @@ align-items: center;
 }
 
 .home {
+    
     grid-column: 5;
 	
+}
+
+.records {
+    grid-column: 6;
+}
+
+.about-us {
+    grid-column: 7;
+}
+
+.contact {
+    grid-column: 8;
 }
 
 .search {
