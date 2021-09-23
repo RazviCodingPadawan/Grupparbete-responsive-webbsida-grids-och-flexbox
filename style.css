@@ -9,6 +9,20 @@ body {
 
 }
 
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+    width: auto;
+    height: 250px;
+    background-color: #92B1B6;
+   }
+   
+
 .pic {
     height: 250px;
     width: 100%;
