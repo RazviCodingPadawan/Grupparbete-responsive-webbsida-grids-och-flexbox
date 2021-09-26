@@ -1,6 +1,7 @@
 body {
     background-size: 100%;
     background-color: #ECDDD0;
+    margin: auto;
 }
 
 .head-container {
@@ -93,7 +94,6 @@ a:hover {
         
    
 }
-<<<<<<< HEAD
 .telcontact{
     grid-column: 12;
 }
@@ -103,7 +103,6 @@ a:hover {
 .followus{
     grid-column: 9;
 }
-=======
 
 @media screen and (min-width: 1200px) {
     .logo {
@@ -173,4 +172,3 @@ a:hover {
        
     }
 }
->>>>>>> 54c05be433382ca98b280857440622b54b4061d6
