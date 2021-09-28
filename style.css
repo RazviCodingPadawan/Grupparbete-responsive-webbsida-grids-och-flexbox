@@ -81,11 +81,10 @@ a:hover {
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    position: absolute;
     justify-items: center;
     align-items: center;
     bottom: 0;
-    width: auto;
+    width: 100%;
     height: 250px;
     background-color: #92B1B6;
 }
@@ -104,6 +103,39 @@ footer {
 
 .followus {
     grid-column: 9;
+   }
+
+   .footer-logo {
+    grid-column: 3;
+    }
+    .telcontact {
+        grid-column: 12;
+    }
+    .subscribe{
+        grid-column: 5;
+    }
+   
+   .followus{
+    grid-column: span 2;
+    grid-row: 1;
+}
+.social-media-logo {
+	width: 2vw;
+}
+
+.hlink {
+	color: black;
+}
+
+.hlink:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.social-media {
+	grid-column: 9;
+	position: relative;
+	display: grid;
 }
 
 @media screen and (min-width: 1200px) {
