@@ -129,7 +129,7 @@ footer {
     justify-items: center;
     gap: 1%;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 25;
+    grid-template-rows: 26;
     grid-template-areas:
     "sidebar" 
     "box-item1" 
