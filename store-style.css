@@ -21,6 +21,10 @@
     "sidebar box-item21 box-item22 box-item23 box-item24 box-item25"
     ;
 }
+.container-store a {
+text-decoration: none;
+}
+
 .box-item {
      padding: 20px;
      grid-area: box-item;     
@@ -38,12 +42,11 @@
 .sidenav-store {
     width: 130px;
     height: 100%;
-    gap: 3%;
     display: flex;
-    padding-right: 5px;
+    padding-left: 30px;
     flex-flow: column nowrap;
     justify-items: flex-start;
-    align-content: space-between;
+    align-items: space-between;
     grid-area: sidebar;
     border-right: 1px solid black;
     background-color: #F1C5AF;
@@ -51,6 +54,8 @@
 }
 
 .sidenav-store a, ul {
+    display: flex;
+    flex-flow: column nowrap;
     text-decoration: none;
     list-style-type: none;
     color: black;
@@ -204,8 +209,7 @@ footer {
         min-height: 2400px;
         }
         footer {
-            position: bottom;
-                     
+            position: bottom;                     
         }
         .sidenav {
             grid-column:1;
