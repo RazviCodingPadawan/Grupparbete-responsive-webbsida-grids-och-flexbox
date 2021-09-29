@@ -9,14 +9,21 @@ body {
 .head-container {
     display: grid;
 }
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
 header {
     height: 80px;
     width: auto;
     background-color: #92B1B6;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .home, 
 .records, 
