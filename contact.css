@@ -19,6 +19,7 @@ body {
     display: grid;
 }
 header {
+    
     height: 80px;
     width: auto;
     background-color: #92B1B6;
@@ -63,13 +64,23 @@ a:hover {
 .about-us {
     grid-column: 7;
 }
-/* .contact {
+.contact {
     grid-column: 8;
-} */
+}
 .search { 
     grid-column: 11;
 }
-
+.contactContainer{
+    background-image: url("img/contact_us.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
 h1 {
     font-family: 'Eczar', sans-serif, 'arial';
     font-weight: 600;
@@ -83,17 +94,6 @@ h4 {
     color: #92b1b6;
     line-height: 1.5;
 }
-.contactContainer{
-    background-image: url("img/contact_us.jpg");
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    position: relative;
-}
 form{
     opacity: 0.6;
     width: 500px;
@@ -104,7 +104,6 @@ form{
     position: relative;
 }
 textarea{
-    /* background-color: #F1C5AE; */
     border-radius: 4px;
     min-height: 30px;
 }
@@ -115,7 +114,6 @@ textarea{
 	margin-bottom: 10px;
 	grid-column: span 2;
 }
-
 .button{
     padding: 7px 35px;
     border-radius: 60px;
@@ -126,36 +124,6 @@ textarea{
     cursor: pointer;
     grid-column: span 2;
 }
-@media screen and (max-width: 768px) {
-    #maincontainer{
-        display: flex;
-        flex-direction: column;
-    }
-}
-/* @media only screen and (min-width: 768px) {
-    .resize-button{
-        position: relative;
-        width: 20vw !important;
-        justify-self: end;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .resize-button{
-        position: relative;
-        margin: 10px 0 0 0;
-        width: 100%;
-    }
-} */
-/* .contactcontainer{
-    background-image: url("img/contact_us.jpg");
-    width: 90%;
-    display: grid;
-    margin: 10px auto;
-    gap: 20px;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-} */
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -169,22 +137,44 @@ footer {
 .footer-logo {
     grid-column: 3;
 }
-.telcontact{
-    grid-column: 12;
-}
 .subscribe{
     grid-column: 5;
 }
-.followus{
-    grid-column: 9;
+.social-media-logo {
+	width: 2vw;
 }
-
-@media only screen and (min-width: 768px) {
-	.resize-button{
-		position: relative;
-		width: 20vw !important;
-		justify-self: end;
-	}
+.hlink {
+	color: black;
+}
+.hlink:hover {
+	color: #35455d;
+	text-decoration: none;
+}
+.social-media {
+    color: #35455d;
+    font-family: Eczar;
+	grid-column: 9;
+	position: relative;
+	display: grid;
+}
+.followus{
+    grid-column: span 2;
+    grid-row: 1;
+    font-size: larger;
+    color: #ecddd0;
+    justify-self: center;
+}
+.telcontact{
+    grid-column: 12;
+    font-family: Eczar;
+    font-size: larger;
+    justify-self: center;
+}
+@media screen and (min-width: 768px) {
+    #name {
+        grid-column: span 2;
+        grid-row: 1;
+    }
 	#tel {
 		grid-column: 2;
 		grid-row: 2;
@@ -195,55 +185,11 @@ footer {
 		grid-row: 2;
 		display: inline-grid;
 	}
-}
-
-
-@media only screen and (max-width: 768px) {
-	.resize-button{
-		position: relative;
-		margin: 10px 0 0 0;
-		width: 100%;
-}
-	#tel {
-		grid-column: span 2;
-		display: inline-grid;
-	}
-	#email {
-		grid-column: span 2;
-		display: inline-grid;
-	}
-}
-
-
-#name {
-	grid-column: span 2;
-	grid-row: 1;
-}
-.followus{
-    grid-column: span 2;
-    grid-row: 1;
-}
-.social-media-logo {
-	width: 2vw;
-}
-
-.hlink {
-	color: black;
-}
-
-.hlink:hover {
-	color: #35455d;
-	text-decoration: none;
-}
-
-.social-media {
-    color: #35455d;
-    font-family: Eczar;
-	grid-column: 9;
-	position: relative;
-	display: grid;
-}
-@media screen and (min-width: 1200px) {
+    resize-button{
+        position: relative;
+        width: 20vw !important;
+        justify-self: end;
+    }
     .head-logo {
         grid-column: 3;  
     }
@@ -256,14 +202,30 @@ footer {
     .about-us {
         grid-column: 7;
     }
-    /* .contact {
-        grid-column: 7;
-    } */
+    .contact {
+        grid-column: 8;
+    }
     .search {
          grid-column: 11;
     }
 }
 @media screen and (max-width: 768px) {
+    .resize-button{
+		position: relative;
+		margin: 10px 0 0 0;
+		width: 100%;
+}   #name {
+    grid-column: span 2;
+    grid-row: 1;
+}
+	#tel {
+		grid-column: span 2;
+		display: inline-grid;
+	}
+	#email {
+		grid-column: span 2;
+		display: inline-grid;
+	}
     body {
         width: 100%;
     }
@@ -295,16 +257,19 @@ footer {
         grid-column: 7;
         grid-row: 2;
     }
-   /*  .contact {
-        grid-column: 7;
+    .contact {
+        grid-column: 8;
         grid-row: 2;
-    } */
+    }
     .search {
          grid-column: 11;
          grid-row: 2; 
     }
 }
 @media screen and (max-width: 471px) {
+    h1{
+        display: none;
+    }
     header {
         display: flex;
         flex-direction: column;
@@ -318,31 +283,25 @@ footer {
     .search {
         width: 300px;
     }
-    .search-cart {
-        justify-self: center;
-    }
-
     footer {
         grid-template-rows: repeat(2, 1fr);
     }
-
     .social-media {
         grid-row: 2;
         grid-column: 5;
     }
-
     .telcontact {
         grid-row: 2;
         grid-column: 6;
         align-self: start;
     }
 }
-.followus{
-    font-size: larger;
-    /* color: #35455d; */
-    /* color: #f1c5ae; */
-    color: #ecddd0;
-    /* color: #ced2c2; */
-    /* color: #bfd1df; */
-    justify-self: center;
-}
+
+
+
+
+
+
+
+
+
