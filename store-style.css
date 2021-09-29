@@ -200,7 +200,12 @@ footer {
     .container-store {
         grid-template-columns: repeat(4, 150px);
         grid-template-rows: repeat(9, 150px);
-        gap: 2%;
+        gap: 5%;
+        min-height: 2400px;
+        }
+        footer {
+            position: bottom;
+                     
         }
         .sidenav {
             grid-column:1;
@@ -303,8 +308,12 @@ footer {
             grid-row: 8;
         }
         .box-item25{
-            grid-column:2/4;
+            grid-column:2;
             grid-row: 9;
+        }
+        footer {
+            grid-column: 2/4;
+            grid-row: stretch;
         }
 }
 @media screen and (max-width: 768px) {
@@ -317,8 +326,8 @@ footer {
     header {
         position: fixed;
     }
-    footer {
-        position: fixed;
+    #footer {
+        display: none;
     }
     .sidenav-store {
         display: none;
@@ -431,85 +440,3 @@ footer {
         grid-row: 26;
     }
 }
-
-/* @media screen and (min-width: 1200px) {
-    .container-store {
-        grid-template-columns: repeat(6, 150px);
-        grid-template-rows: repeat(5, 150px);
-        grid-template-areas: 
-        "sidebar box-item1 box-item2 box-item3 box-item4 box-item5"
-        "sidebar box-item6 box-item7 box-item8 box-item9 box-item10"
-        "sidebar box-item11 box-item12 box-item13 box-item14 box-item15"
-        "sidebar box-item16 box-item17 box-item18 box-item19 box-item20"
-        "sidebar box-item21 box-item22 box-item23 box-item24 box-item25"
-        ;
-    }
-}
-
-@media screen and (max-width: 960px) {
-
-    .container-store {
-    
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(9, 200px);
-    grid-template-areas:
-    "sidebar box-item1 box-item2 box-item3"
-    "sidebar box-item4 box-item5 box-item6"
-    "sidebar box-item7 box-item8 box-item9"
-    "sidebar box-item10 box-item11 box-item12"
-    "sidebar box-item13 box-item14 box-item15"
-    "sidebar box-item16 box-item17 box-item18"
-    "sidebar box-item19 box-item20 box-item21"
-    "sidebar box-item22 box-item23 box-item24"
-    "sidebar box-item25 box-item25 box-item25"
-    ;
-    }
-}
-
-@media screen and (max-width: 768px) 
-{
-    .sidenav-store {
-        display: flex;
-        justify-content: center;
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid black;
-    }
-    .header-pic {
-        display: none;
-    }
-    .container-store {    
-    justify-items: center;
-    gap: 1%;
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(27, 400px);
-    grid-template-areas:
-    "sidebar" 
-    "box-item1" 
-    "box-item2"
-    "box-item3" 
-    "box-item4"
-    "box-item5" 
-    "box-item6"
-    "box-item7" 
-    "box-item8"
-    "box-item9" 
-    "box-item10"
-    "box-item11" 
-    "box-item12" 
-    "box-item13"
-    "box-item14" 
-    "box-item15" 
-    "box-item16" 
-    "box-item17" 
-    "box-item18" 
-    "box-item19" 
-    "box-item20" 
-    "box-item21" 
-    "box-item22"
-    "box-item23" 
-    "box-item24"
-    "footer"
-    ;
-    }
-}  */
