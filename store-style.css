@@ -326,7 +326,7 @@ footer {
             grid-row: stretch;
         }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container-store {
     gap: 1%;
     margin: 3px;
